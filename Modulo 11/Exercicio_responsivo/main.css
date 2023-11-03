@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+header, footer {
+    background-color: #466ed1;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {
+    padding: 16px 0 0;
+}
+
+header > .container, 
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobreloja h2 {
+    border-bottom: 4px solid #466ed1;
+    padding: 16px 0;
+    color:#466ed1;
+}
+
+#sobreloja p {
+    font-size: 1.4em;
+}
+
+#sobreloja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    border-bottom: 4px solid #466ed1;
+    padding: 16px;
+    color: #466ed1;
+    
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 70 30%;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 5%;
+    list-style-type: none;
+    align-items:flex-end;
+}
+
+.lista-produtos img {
+    max-width: 100%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #466ed1;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    .container-flex h1 {
+        margin-left: 65px;
+    }
+    #sobreloja img {
+        max-width: 100%;
+    }
+    
+    .linkrigth {
+        width: 50%;
+        padding: 16px;
+    }
+
+    .lista-produtos {
+        display: block;
+        flex-direction: column;
+    }
+
+    .lista-produtos button {
+        margin-bottom: 50px;
+    }
+    .container-flex {
+        display: flex;
+    }
+}
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .container {
+            display:block;
+            max-width: 90%;
+            font-size: 1.3em;
+        }
+        
+        #sobreloja img {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .lista-produtos {
+            grid-template-columns: repeat(2, 49%);
+        }
+
+        .lista-produtos button {
+            font-size: 1em;
+        }
+
+        .container-flex {
+            display: flex;
+        }
+    }

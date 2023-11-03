@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link href="lib/dist_css_bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .cropped-image {
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        #myCarousel {
+            background-color: #000;
+        }
+
+        /* Estilos para o menu */
+        .navbar {
+            background-color: #333; /* Cor de fundo do menu */
+        }
+        .navbar-brand {
+            color: #fff; /* Cor do texto do logotipo */
+        }
+        .navbar-nav .nav-link {
+            color: #fff; /* Cor do texto dos links */
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        .navbar-brand img {
+            max-width: 80px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Barra de Navegação -->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top"></nav>
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Imagens/Marca_02_Branco_Roxo.png" alt="Seu Logo"></a>
+            <!-- Botão Hambúrguer para telas pequenas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Itens de Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#myCarousel">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- carrousel -->
+    <div id="myCarousel" class="carousel slide pt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img src="Imagens/2404044.jpg" class="d-block w-100 cropped-image" alt="Gamer">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="Imagens/watercoolercarousel.jpg" class="d-block w-30 cropped-image img-responsive align-items-center col mx-auto text-center" alt="Water Cooler">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="Imagens/air-cooler-rise-mode-gamer-g800-180mm-rgb-rm-ac-o8-rgb_1663775981_gg.jpg" class="d-block w-20 cropped-image img-responsive align-items-center col mx-auto text-center" alt="Air Cooler">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </a>
+    <!-- carrousel icones embaixo da imagem -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" class="active" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div> 
+</div>
+<!-- cards -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <img src="Imagens/air cooler grid.jpg" class="card-img-top" alt="Imagem 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Cooler Rise Mode Gamer G800</h5>
+                        <p class="card-text">LEDs RGB Rainbow de alto brilho.
+                            Compatibilidade já com o socket AMD AM4 e Intel Lga 1200.
+                            6 Heat pipes em cobre proporcionando uma melhor dissipação de calor.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <img src="Imagens/water-cooler-gamer-rise-mode-argb-intel-e-amd-240mm-preto-rm-wcb-04-argb_1663778106_gg.jpg" class="card-img-top" alt="Imagem 5">
+                    <div class="card-body">
+                        <h5 class="card-title">WATER COOLER RISE MODE 240MM</h5>
+                        <p class="card-text">Bomba e fans no padrão RGB 4p 12v, compatíveis com todos os softwares de Placas Mãe do mercado.</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <img src="Imagens/gabinete-gamer-hyrax-hgb710-mini-tower-m-atx-frente-e-lateral-em-vidro-temperado-preto-hgb710b_1688569498_gg.jpg" class="card-img-top" alt="Imagem 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Gabinete Gamer Hyrax HGB710 </h5>
+                        <p class="card-text">Mini Tower, M-ATX, Frente e Lateral Em Vidro Temperado, Preto - HGB710B</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Contato -->
+    <div class="container mt-5" id="contato">
+        <h1>Entre em Contato</h1>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu E-mail">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua Mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</body>
+<script src="lib/dist_js_bootstrap.bundle.min.js"></script>
+</html>

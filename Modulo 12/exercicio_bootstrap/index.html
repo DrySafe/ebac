@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/dist_css_bootstrap.min.css">
+    <style>
+        .checkbox-and-button {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-and-button .btn {
+            margin-left: 10px;
+        }
+        
+        .custom-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Formulário Bootstrap</h1>
+            <div class="custom-form">
+                <form>
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" title="Nome completo" required>
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" title="example@email.com" required>
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone" pattern="[0-9]+" title="Somente números são permitidos" required>
+                        <div class="checkbox-and-button form-switch form-check">
+                            <input type="checkbox" class="form-check-input" id="concordo" required>
+                            <label class="form-check-label" for="concordo">Li e concordo com os termos do site</label>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                </form>      
+            </div>
+        </div>
+    <script src="lib/dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
